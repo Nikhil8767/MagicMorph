@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes colorCycle {
+  0%   { background-color: #ff6b6b; }  /* Red */
+  25%  { background-color: #feca57; }  /* Yellow */
+  50%  { background-color: #1dd1a1; }  /* Green */
+  75%  { background-color: #54a0ff; }  /* Blue */
+  100% { background-color: #ff6b6b; }  /* Back to Red */
+}
+
+.color-shower {
+  animation: colorCycle 8s infinite;
+}

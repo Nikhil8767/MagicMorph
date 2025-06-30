@@ -1,15 +1,11 @@
 import React from 'react'
 
 const Home = () => {
-  const names=["nikhil","piyush"];
+  
   return (
     <div>
         <div>
-          <div className=''>
-                  <h2>
-                    all posts :
-                  </h2>
-          </div>
+            <h1>Welcome to The Magic Morph <span>a place to create imaginary things</span></h1>
         </div>
     </div>
   )

@@ -21,9 +21,9 @@ const Home = () => {
           <h2 className='justify-center text-2xl font-bold bg-gradient-to-b'>lets draw something new</h2>
         </div>
 
-        <div className='color-shower w-10 justify-center text-center'>
-          <button className='items-center justify-center'>get Started</button>
-        </div>
+       
+          <button className='color-shower w-10  items-center justify-center text-center p-2 mr-5'>get Started</button>
+        
 
     </div>
   )

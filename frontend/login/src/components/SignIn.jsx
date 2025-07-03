@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Navigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
+  const navigate=useNavigate();
   const [email,setemail]=useState('');
   const [password,setPassword]=useState('');
 
@@ -14,7 +15,7 @@ const SignIn = () => {
     }
 
     try {
-      const response=await fetch('https://localhost:3000/api/signIn',{
+      const response=await fetch('http://localhost:3000/api/signIn',{
         method:'POST',
         headers:{'content-type':'application/json'},
         body:JSON.stringify({email,password})
@@ -23,16 +24,20 @@ const SignIn = () => {
       const data=await response.json();
 
       if(response.ok){
-        Navigate('/Home')
+        localStorage.setItem('token',data.token);
+        navigate('/Morph');
+        
       }
       else{
         alert(data.msg || 'invalid creditentials');
       }
 
     } catch (error) {
+      console.log(error);
+      
       alert(error);
     }
-  }
+  };
 
   return (
     <div>

@@ -7,6 +7,7 @@ import SignUp from './components/SignUp'
 import SignIn from './components/SignIn'
 import Navbar from './components/Navbar'
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
+import Morph from './components/Morph'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/SignUp' element={<SignUp/>}/>
       <Route path='/SignIn' element={<SignIn/>}/>
+      <Route path='Morph' element={<Morph/>} />
     </Routes>
   </Router>
   )

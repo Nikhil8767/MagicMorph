@@ -1,15 +1,15 @@
 import react from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
-const protect=({children})=>{
+const Protect=({children})=>{
     const navigate=useNavigate();
     const token=localStorage.getItem('token');
 
     if(!token){
-        return navigate('/signIn');
+        return <Navigate to={'/signIn'}/>
     }
 
     return children
 }
 
-export default protect;
+export default Protect;

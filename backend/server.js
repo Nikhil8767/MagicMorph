@@ -31,3 +31,5 @@ app.get('/',(req,res)=>{
 app.listen(PORT,()=>{
     console.log('ruuning on port 30000')
 });
+
+module.exports=app;

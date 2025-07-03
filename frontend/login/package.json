@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "konva": "^9.3.20",
     "react": "^19.1.0",
-    "react-canvas-draw": "^1.2.1",
     "react-dom": "^19.1.0",
+    "react-konva": "^19.0.7",
     "react-router-dom": "^7.6.3"
   },
   "devDependencies": {

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fabric": "^6.7.0",
+    "react-canvas-draw": "^1.2.1"
+  }
+}
